@@ -314,7 +314,16 @@
 <h3 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h3><p>地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 具体注册流程请自行检索</p>
 <h3 id="安装Hexo博客框架工具"><a href="#安装Hexo博客框架工具" class="headerlink" title="安装Hexo博客框架工具"></a>安装Hexo博客框架工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>如果报错，在命令行前加上sudo</p>
-<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><h4 id="创建一个project"><a href="#创建一个project" class="headerlink" title="创建一个project"></a>创建一个project</h4><h4 id="New-SSH-key"><a href="#New-SSH-key" class="headerlink" title="New SSH key"></a>New SSH key</h4><p>该步骤是用于后面将本地的博客内容同步到github上</p>
+<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><h4 id="创建一个project"><a href="#创建一个project" class="headerlink" title="创建一个project"></a>创建一个project</h4><img src="/2018/09/20/hexo快速搭建博客/project.jpg">
+<p>点击按钮创建，名称可以命名为:你的github的名称.github.io，便于记忆和访问。</p>
+<p>当然，也可以自己申请一个域名，然后进行绑定。</p>
+<h4 id="New-SSH-key"><a href="#New-SSH-key" class="headerlink" title="New SSH key"></a>New SSH key</h4><p>该步骤是用于后面将本地的博客内容同步到github上</p>
+<img src="/2018/09/20/hexo快速搭建博客/profile.jpg">
+<p>选择 your profile -&gt; edit profile</p>
+<img src="/2018/09/20/hexo快速搭建博客/key.jpg">
+<p>选择 SSH and GPG keys -&gt; New SSH key</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>将上面的pushlic key填入github上的位置即可。</p>
 <h3 id="创建本地站点"><a href="#创建本地站点" class="headerlink" title="创建本地站点"></a>创建本地站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myBlog</span><br></pre></td></tr></table></figure>
 <h3 id="安装项目依赖"><a href="#安装项目依赖" class="headerlink" title="安装项目依赖"></a>安装项目依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> myBlog</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
