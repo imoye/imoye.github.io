@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="乐观、努力、向上">
-<meta property="og:type" content="website">
-<meta property="og:title" content="墨叶的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。 搭建准备安装node下载地址：https://nodejs.org/en/download/ 测试：命令行测试查看node是否安装成功 1$ node -v 安装git下载地址：https://git-scm.com/downloads mac机器自带git，不需要安装，windows环境需要下载安装">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo快速搭建博客">
+<meta property="og:url" content="http://yoursite.com/2018/09/20/hexo快速搭建博客/index.html">
 <meta property="og:site_name" content="墨叶的个人博客">
-<meta property="og:description" content="乐观、努力、向上">
+<meta property="og:description" content="该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。 搭建准备安装node下载地址：https://nodejs.org/en/download/ 测试：命令行测试查看node是否安装成功 1$ node -v 安装git下载地址：https://git-scm.com/downloads mac机器自带git，不需要安装，windows环境需要下载安装">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/09/20/hexo快速搭建博客/deploy.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/09/20/hexo快速搭建博客/assets.jpg">
+<meta property="og:updated_time" content="2018-09-20T03:39:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="墨叶的个人博客">
-<meta name="twitter:description" content="乐观、努力、向上">
+<meta name="twitter:title" content="hexo快速搭建博客">
+<meta name="twitter:description" content="该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。 搭建准备安装node下载地址：https://nodejs.org/en/download/ 测试：命令行测试查看node是否安装成功 1$ node -v 安装git下载地址：https://git-scm.com/downloads mac机器自带git，不需要安装，windows环境需要下载安装">
+<meta name="twitter:image" content="http://yoursite.com/2018/09/20/hexo快速搭建博客/deploy.jpg">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/20/hexo快速搭建博客/"/>
 
 
 
 
 
-  <title>墨叶的个人博客</title>
+  <title>hexo快速搭建博客 | 墨叶的个人博客</title>
   
 
 
@@ -143,8 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +252,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/20/hexo快速搭建博客/" itemprop="url">hexo快速搭建博客</a></h1>
+          <h1 class="post-title" itemprop="name headline">hexo快速搭建博客</h1>
         
 
         <div class="post-meta">
@@ -311,9 +312,7 @@
       
 
       
-        
-          
-            <p>该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。</p>
+        <p>该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。</p>
 <h2 id="搭建准备"><a href="#搭建准备" class="headerlink" title="搭建准备"></a>搭建准备</h2><h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><p>下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
 <p>测试：命令行测试查看node是否安装成功</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
@@ -348,8 +347,6 @@
 <p>特别详细，个性化的设置参考这里即可</p>
 <p>以上， 谢谢。</p>
 
-          
-        
       
     </div>
     
@@ -366,12 +363,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -381,10 +378,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -392,6 +390,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -412,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -455,6 +466,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建准备"><span class="nav-number">1.</span> <span class="nav-text">搭建准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node"><span class="nav-number">1.1.</span> <span class="nav-text">安装node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装git"><span class="nav-number">1.2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册github"><span class="nav-number">1.3.</span> <span class="nav-text">注册github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Hexo博客框架工具"><span class="nav-number">1.4.</span> <span class="nav-text">安装Hexo博客框架工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始搭建"><span class="nav-number">2.</span> <span class="nav-text">开始搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Pages"><span class="nav-number">2.1.</span> <span class="nav-text">GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个project"><span class="nav-number">2.1.1.</span> <span class="nav-text">创建一个project</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#New-SSH-key"><span class="nav-number">2.1.2.</span> <span class="nav-text">New SSH key</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地站点"><span class="nav-number">2.2.</span> <span class="nav-text">创建本地站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装项目依赖"><span class="nav-number">2.3.</span> <span class="nav-text">安装项目依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成静态文件"><span class="nav-number">2.4.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开本地server"><span class="nav-number">2.5.</span> <span class="nav-text">打开本地server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建测试博客同步到github"><span class="nav-number">3.</span> <span class="nav-text">创建测试博客同步到github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建一个测试博客"><span class="nav-number">3.1.</span> <span class="nav-text">新建一个测试博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改deploy配置"><span class="nav-number">3.2.</span> <span class="nav-text">修改deploy配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装部署插件"><span class="nav-number">3.3.</span> <span class="nav-text">安装部署插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#同步到github"><span class="nav-number">3.4.</span> <span class="nav-text">同步到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客源码保存"><span class="nav-number">3.5.</span> <span class="nav-text">博客源码保存</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo-图片引入"><span class="nav-number">4.</span> <span class="nav-text">hexo 图片引入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置"><span class="nav-number">4.1.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章内引入"><span class="nav-number">4.2.</span> <span class="nav-text">文章内引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首页引入"><span class="nav-number">4.3.</span> <span class="nav-text">首页引入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题更改"><span class="nav-number">5.</span> <span class="nav-text">主题更改</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -595,6 +622,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
