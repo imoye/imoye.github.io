@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="乐观、努力、向上">
-<meta property="og:type" content="website">
-<meta property="og:title" content="墨叶的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Less是CSS预处理语言。Less仅对CSS语言增加了少许的扩展，所以对于初学者很容易上手。 基本用法变量使用@命名变量，变量不仅可以应用到CSS的属性值上，也可以应用到选择符、属性、URLs和@import。 属性值1234567@width: 10px;@height: @width + 10px;.box &amp;#123;    width: @width;    height: @heigh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Less相关笔记">
+<meta property="og:url" content="http://yoursite.com/2018/10/12/less/index.html">
 <meta property="og:site_name" content="墨叶的个人博客">
-<meta property="og:description" content="乐观、努力、向上">
+<meta property="og:description" content="Less是CSS预处理语言。Less仅对CSS语言增加了少许的扩展，所以对于初学者很容易上手。 基本用法变量使用@命名变量，变量不仅可以应用到CSS的属性值上，也可以应用到选择符、属性、URLs和@import。 属性值1234567@width: 10px;@height: @width + 10px;.box &amp;#123;    width: @width;    height: @heigh">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-10-12T12:18:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="墨叶的个人博客">
-<meta name="twitter:description" content="乐观、努力、向上">
+<meta name="twitter:title" content="Less相关笔记">
+<meta name="twitter:description" content="Less是CSS预处理语言。Less仅对CSS语言增加了少许的扩展，所以对于初学者很容易上手。 基本用法变量使用@命名变量，变量不仅可以应用到CSS的属性值上，也可以应用到选择符、属性、URLs和@import。 属性值1234567@width: 10px;@height: @width + 10px;.box &amp;#123;    width: @width;    height: @heigh">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/12/less/"/>
 
 
 
 
 
-  <title>墨叶的个人博客</title>
+  <title>Less相关笔记 | 墨叶的个人博客</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/12/less/" itemprop="url">Less相关笔记</a></h1>
+          <h1 class="post-title" itemprop="name headline">Less相关笔记</h1>
         
 
         <div class="post-meta">
@@ -301,9 +299,7 @@
       
 
       
-        
-          
-            <p>Less是CSS预处理语言。Less仅对CSS语言增加了少许的扩展，所以对于初学者很容易上手。</p>
+        <p>Less是CSS预处理语言。Less仅对CSS语言增加了少许的扩展，所以对于初学者很容易上手。</p>
 <h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>使用@命名变量，变量不仅可以应用到CSS的属性值上，也可以应用到选择符、属性、URLs和@import。</p>
 <h4 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@width:</span> <span class="number">10px</span>;</span><br><span class="line"><span class="variable">@height:</span> <span class="variable">@width</span> + <span class="number">10px</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="variable">@width</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="variable">@height</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="选择符"><a href="#选择符" class="headerlink" title="选择符"></a>选择符</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@custom-selector:</span> box;</span><br><span class="line"></span><br><span class="line">.&#123;<span class="selector-tag">custom-selector</span>&#125;: &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -337,8 +333,6 @@
 <p>进行安装后，使用lessc命令进行文件编译。</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -355,160 +349,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/26/transform影响fixed布局问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="墨叶">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="墨叶的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/26/transform影响fixed布局问题/" itemprop="url">transform影响fixed布局问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-26T14:36:52+08:00">
-                2018-09-26
-              </time>
+              <a href="/2018/09/26/transform影响fixed布局问题/" rel="next" title="transform影响fixed布局问题">
+                <i class="fa fa-chevron-left"></i> transform影响fixed布局问题
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>在做无线端单页应用时，经常会有页面之间动画切换的需求，例如左滑进入、右滑退出。</p>
-<p>在使用transform实现动画时，可能会遇到某些页面内部存在position:fixed的元素，此时会发现元素的fixed属性失效了。</p>
-<img src="/2018/09/26/transform影响fixed布局问题/valid.jpg" title="图一：fixed正常">
-<img src="/2018/09/26/transform影响fixed布局问题/invalid.jpg" title="图二：fixed不正常">
-<p>原因是什么呢？</p>
-<p>首先我们要先认识一个名词 <a href="https://www.w3.org/TR/CSS2/visuren.html#q9.0" title="视觉格式化模型" target="_blank" rel="noopener">视觉格式化模型</a>（visual formatting model）。这个模型是CSS的基础概念之一。</p>
-<p>视觉格式化模型会根据CSS盒子模型将文档中的元素转换为一个个盒子(BFC、IFC、FFC、GFC)。</p>
-<p>而某些CSS属性可以形成 层级上下文（stacking context）并且（或者）形成containing block。</p>
-<p>所以说问题解决的方式是：</p>
-<pre><code>在动画完毕之后，将transform的值设置为none
-</code></pre><p>下面是经常用到的，可以形成层级上下文（stacking context）的情形：</p>
-<ul>
-<li><p>根元素</p>
-</li>
-<li><p>transform不为none的元素</p>
-</li>
-<li><p>-webkit-overflow-scrolling: touch</p>
-</li>
-<li><p>绝对／相对定位元素z-index不为auto</p>
-</li>
-<li><p>position: fixed</p>
-</li>
-<li><p>perspective不为none的元素</p>
-</li>
-<li><p>opacity不为1</p>
-</li>
-<li><p>……</p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -518,172 +380,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/20/hexo快速搭建博客/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="墨叶">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="墨叶的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/20/hexo快速搭建博客/" itemprop="url">hexo快速搭建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-20T10:48:41+08:00">
-                2018-09-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>该文是自己搭建时的步骤，除非特殊说明，修改的配置文件均为根目录下的_config.yml文件。</p>
-<h2 id="搭建准备"><a href="#搭建准备" class="headerlink" title="搭建准备"></a>搭建准备</h2><h3 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h3><p>下载地址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
-<p>测试：命令行测试查看node是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
-<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>下载地址：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
-<p>mac机器自带git，不需要安装，windows环境需要下载安装</p>
-<p>测试：命令行测试查看git是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br></pre></td></tr></table></figure>
-<h3 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h3><p>地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a> 具体注册流程请自行检索</p>
-<h3 id="安装Hexo博客框架工具"><a href="#安装Hexo博客框架工具" class="headerlink" title="安装Hexo博客框架工具"></a>安装Hexo博客框架工具</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>如果报错，在命令行前加上sudo</p>
-<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h3><h4 id="创建一个project"><a href="#创建一个project" class="headerlink" title="创建一个project"></a>创建一个project</h4><img src="/2018/09/20/hexo快速搭建博客/project.jpg">
-<p>点击按钮创建，名称可以命名为:你的github的名称.github.io，便于记忆和访问。</p>
-<p>当然，也可以自己申请一个域名，然后进行绑定。</p>
-<h4 id="New-SSH-key"><a href="#New-SSH-key" class="headerlink" title="New SSH key"></a>New SSH key</h4><p>该步骤是用于后面将本地的博客内容同步到github上</p>
-<img src="/2018/09/20/hexo快速搭建博客/profile.jpg">
-<p>选择 your profile -&gt; edit profile</p>
-<img src="/2018/09/20/hexo快速搭建博客/key.jpg">
-<p>选择 SSH and GPG keys -&gt; New SSH key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>将上面的pushlic key填入github上的位置即可。</p>
-<h3 id="创建本地站点"><a href="#创建本地站点" class="headerlink" title="创建本地站点"></a>创建本地站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myBlog</span><br></pre></td></tr></table></figure>
-<h3 id="安装项目依赖"><a href="#安装项目依赖" class="headerlink" title="安装项目依赖"></a>安装项目依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> myBlog</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<h3 id="打开本地server"><a href="#打开本地server" class="headerlink" title="打开本地server"></a>打开本地server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>这个时候你就可以在本地看到blog的雏形了。</p>
-<h2 id="创建测试博客同步到github"><a href="#创建测试博客同步到github" class="headerlink" title="创建测试博客同步到github"></a>创建测试博客同步到github</h2><h3 id="新建一个测试博客"><a href="#新建一个测试博客" class="headerlink" title="新建一个测试博客"></a>新建一个测试博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"我的测试博客"</span></span><br></pre></td></tr></table></figure>
-<p>生成的文件在myBlog -&gt; source -&gt; _post下面，可以尝试编辑内容。</p>
-<h3 id="修改deploy配置"><a href="#修改deploy配置" class="headerlink" title="修改deploy配置"></a>修改deploy配置</h3><img src="/2018/09/20/hexo快速搭建博客/deploy.jpg">
-<h3 id="安装部署插件"><a href="#安装部署插件" class="headerlink" title="安装部署插件"></a>安装部署插件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git —save</span><br></pre></td></tr></table></figure>
-<h3 id="同步到github"><a href="#同步到github" class="headerlink" title="同步到github"></a>同步到github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">$ hexo g</span><br><span class="line"></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>现在访问线上的环境就可以看到新创建的博客内容了。</p>
-<h3 id="博客源码保存"><a href="#博客源码保存" class="headerlink" title="博客源码保存"></a>博客源码保存</h3><p>github上是生成的静态文件，本地的源码并没有保存，如果想要write everywhere，建议上传到云或者创建一个github的分支保存。</p>
-<h2 id="hexo-图片引入"><a href="#hexo-图片引入" class="headerlink" title="hexo 图片引入"></a>hexo 图片引入</h2><h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><img src="/2018/09/20/hexo快速搭建博客/assets.jpg">
-<p>修改该配置后，_posts下会生成一个和博客同名的文件夹，将图片放到该文件夹内，比如图片名称是assets.jpg</p>
-<h3 id="文章内引入"><a href="#文章内引入" class="headerlink" title="文章内引入"></a>文章内引入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ![](assets.jpg)</span><br></pre></td></tr></table></figure>
-<h3 id="首页引入"><a href="#首页引入" class="headerlink" title="首页引入"></a>首页引入</h3><p>如果需要文章内和首页都展示图片，需要使用插件来实现</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ &#123;% asset_img assets.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="主题更改"><a href="#主题更改" class="headerlink" title="主题更改"></a>主题更改</h2><p>我使用的next主题，下面这个官网有详细的介绍。</p>
-<p>请参考：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a></p>
-<p>特别详细，个性化的设置参考这里即可</p>
-<p>以上， 谢谢。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -691,6 +392,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -711,8 +416,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -754,6 +468,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本用法"><span class="nav-number">1.</span> <span class="nav-text">基本用法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#变量"><span class="nav-number">1.1.</span> <span class="nav-text">变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#属性值"><span class="nav-number">1.1.1.</span> <span class="nav-text">属性值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择符"><span class="nav-number">1.1.2.</span> <span class="nav-text">选择符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#属性"><span class="nav-number">1.1.3.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#URLs"><span class="nav-number">1.1.4.</span> <span class="nav-text">URLs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#import"><span class="nav-number">1.1.5.</span> <span class="nav-text">@import</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#另外在LESS中还可以使用其他的变量来定义变量"><span class="nav-number">1.1.6.</span> <span class="nav-text">另外在LESS中还可以使用其他的变量来定义变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scope"><span class="nav-number">1.2.</span> <span class="nav-text">Scope</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mixins"><span class="nav-number">1.3.</span> <span class="nav-text">Mixins</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#可以使用class或者id选择符进行mixin"><span class="nav-number">1.3.1.</span> <span class="nav-text">可以使用class或者id选择符进行mixin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如果不想定义的mixin在最终的css文件中展示出来，可以使用"><span class="nav-number">1.3.2.</span> <span class="nav-text">如果不想定义的mixin在最终的css文件中展示出来，可以使用()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mixin传递参数"><span class="nav-number">1.3.3.</span> <span class="nav-text">mixin传递参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#嵌套"><span class="nav-number">1.4.</span> <span class="nav-text">嵌套</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命名空间"><span class="nav-number">1.5.</span> <span class="nav-text">命名空间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Escaping"><span class="nav-number">1.6.</span> <span class="nav-text">Escaping</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算"><span class="nav-number">1.7.</span> <span class="nav-text">运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Maps"><span class="nav-number">1.8.</span> <span class="nav-text">Maps</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.9.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">1.10.</span> <span class="nav-text">函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译"><span class="nav-number">2.</span> <span class="nav-text">编译</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -894,6 +624,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
